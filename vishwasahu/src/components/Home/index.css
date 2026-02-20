@@ -1,0 +1,23 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+.nav-container {
+  height: 15vh;
+  width: 100vw;
+  background-color: white;
+}
+.logo{
+    height: 100%;
+    width: auto;
+}
+.content {
+  background-image: linear-gradient(135deg,
+    #0d2d2a 0%,
+    #0f2a52 55%,
+    #1e3a8a 100%);
+  height: 80vh;
+}
