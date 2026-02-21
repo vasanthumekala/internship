@@ -1,0 +1,295 @@
+/* About page styles */
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Hero Banner ─────────────────────────────────── */
+.about-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.1) 0%,
+    rgba(30, 58, 138, 0.12) 100%
+  );
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.about-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 800;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+
+.about-hero-sub {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  color: #6b7280;
+  letter-spacing: 1px;
+}
+
+/* ── Story ───────────────────────────────────────── */
+.about-story {
+  padding: 80px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-photo-caption{
+    margin-top: 12px;
+    font-size: 20px;
+    color: #08090b;
+    text-align: center;
+}
+.about-photo {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #374151;
+}
+
+/* ── Skills ──────────────────────────────────────── */
+.about-skills {
+  padding: 70px 24px;
+  background: var(--neutral-light);
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-label {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--dark-text);
+}
+
+.skill-pct {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.skill-bar-bg {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--teal), var(--accent-blue));
+  border-radius: 100px;
+  transition: width 0.8s ease;
+}
+
+/* ── Timeline ────────────────────────────────────── */
+.about-timeline {
+  padding: 70px 24px;
+}
+
+.timeline {
+  list-style: none;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 52px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--teal), var(--primary-blue));
+  opacity: 0.3;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 70px 16px 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.timeline-year {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--accent-blue);
+  text-align: right;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px var(--teal);
+  flex-shrink: 0;
+}
+
+.timeline-event {
+  font-size: 15px;
+  color: #374151;
+}
+
+/* ── Company Card ────────────────────────────────── */
+.about-company {
+  padding: 70px 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.06),
+    rgba(30, 58, 138, 0.08)
+  );
+  display: flex;
+  justify-content: center;
+}
+
+.company-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 640px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.company-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.company-name {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+
+.company-tagline {
+  font-size: 15px;
+  color: var(--teal);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.company-desc {
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 480px;
+}
+
+.company-stats {
+  display: flex;
+  gap: 40px;
+  margin: 8px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary-blue);
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 28px;
+  }
+
+  .about-story {
+    padding: 48px 20px;
+  }
+
+  .timeline::before {
+    left: 38px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 56px 14px 1fr;
+    gap: 10px;
+  }
+
+  .company-stats {
+    gap: 24px;
+  }
+
+  .company-card {
+    padding: 28px 20px;
+  }
+}

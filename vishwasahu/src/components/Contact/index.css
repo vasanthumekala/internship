@@ -1,0 +1,261 @@
+/* Contact page styles */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Hero Banner ─────────────────────────────────── */
+.contact-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.1) 0%,
+    rgba(30, 58, 138, 0.12) 100%
+  );
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.contact-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 800;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+
+.contact-hero-sub {
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ── Content Grid ────────────────────────────────── */
+.contact-content {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 48px;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 70px 32px;
+  width: 100%;
+  align-items: start;
+}
+
+/* ── Info Panel ──────────────────────────────────── */
+.contact-info {
+  background: var(--primary-blue);
+  border-radius: 16px;
+  padding: 36px 28px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-info-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.ci-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ci-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2px;
+}
+
+.ci-value {
+  font-size: 15px;
+  color: #fff;
+}
+
+.ci-link {
+  color: #93c5fd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ci-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ── Socials ─────────────────────────────────────── */
+.socials-row {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.social-btn:hover {
+  background: var(--teal);
+}
+
+/* ── Form Panel ──────────────────────────────────── */
+.contact-form-wrap {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.form-label span {
+  color: var(--teal);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: var(--dark-text);
+  background: #fafafa;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  background: #fff;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-submit {
+  width: 100%;
+}
+
+/* ── Success State ───────────────────────────────── */
+.contact-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px 20px;
+}
+
+.success-icon {
+  font-size: 52px;
+}
+
+.contact-success h3 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.contact-success p {
+  font-size: 16px;
+  color: #6b7280;
+  max-width: 400px;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 900px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    padding: 48px 20px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-wrap {
+    padding: 24px 16px;
+  }
+}
