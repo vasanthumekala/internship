@@ -16,7 +16,7 @@ function Footer() {
           vishwa@cpstechsolutions.com
         </a>
         {" · "}
-        <a href="tel:+919000000000">+91 90000000000</a>
+        <a href="tel:+919000000000">+91 90000000001</a>
       </p>
       <div className="footer-socials">
         <a
