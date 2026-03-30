@@ -44,7 +44,7 @@ function Footer() {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          ⌥
+          Hub
         </a>
       </div>
       <p className="footer-copy">
